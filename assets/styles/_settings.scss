@@ -15,7 +15,22 @@ $font2: "poppins";
 
 // COLORS //
 
-$blue1: #0097d7;
+$gradYellow: linear-gradient(
+  45deg,
+  #fafafa3d 0%,
+  #d0ad000a 30%,
+  #d0ad000a 70%,
+  #fafafa3d 100%
+);
+
+$gradGrey: linear-gradient(
+  45deg,
+  #fafafa3d 0%,
+  #8787870a 30%,
+  #8787870a 70%,
+  #fafafa3d 100%
+);
+
 $blue2: #095a7d;
 $blue3: #004992;
 

@@ -1,26 +1,48 @@
 .section1 {
+  position: relative;
   height: 100vh;
-  padding: 0 100px;
-  backdrop-filter: blur(5px);
-  background: url(../../assets/img/bg_header.png) fixed center/cover;
+  background: $black2;
 
-  .corporation-container {
-    @include grid("", center);
-    @include rowColumn(50% 50%, 100vh);
-    text-align: center;
-    padding: 50px;
+  @include grid("", center);
+  @include rowColumn(50% 50%, 100vh);
+  text-align: center;
+  padding: 0 50px;
+
+  .corporation-container-left,
+  .corporation-container-right {
+    position: relative;
+    width: 95%;
+    border-radius: 3px;
+    z-index: 2;
 
     h2 {
+      padding-top: 50px;
       font-family: $font2;
       text-transform: uppercase;
+      width: 310px;
+      margin: 0 auto;
+      letter-spacing: 1px;
     }
 
+    img {
+      padding: 100px 0;
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.361));
+    }
+  }
+  .corporation-container-left {
+    background: url(../../assets/img/bg_civilian1.jpg) fixed center/cover;
+
     .civilian-container {
-      height: 100%;
+      height: 90%;
+      background: $gradYellow;
+      margin: 50px;
+      border-radius: 10px;
+      backdrop-filter: blur(2px);
+
+      &:hover {
+      }
 
       h2 {
-        width: 300px;
-        margin: 0 auto;
         background: linear-gradient(
           15deg,
           $yellow1 0%,
@@ -33,15 +55,21 @@
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
+        filter: drop-shadow(0 2px 1px $yellow1);
       }
     }
+  }
+  .corporation-container-right {
+    background: url(../../assets/img/bg_section1.png) fixed center/cover;
 
     .military-container {
-      height: 100%;
+      height: 90%;
+      margin: 50px;
+      background: $gradGrey;
+      border-radius: 10px;
+      backdrop-filter: blur(2px);
 
       h2 {
-        width: 300px;
-        margin: 0 auto;
         background: linear-gradient(
           15deg,
           $grey1 0%,
@@ -54,6 +82,7 @@
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
+        filter: drop-shadow(0 2px 1px $grey2);
       }
     }
   }

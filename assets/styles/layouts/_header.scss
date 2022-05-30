@@ -7,7 +7,7 @@ header {
   .navbar {
     @include grid(center, "");
     @include rowColumn(10% 80% 10%, 100px);
-    position: fixed;
+    position: absolute;
     min-width: 500px;
     width: 90%;
     left: 50%;
