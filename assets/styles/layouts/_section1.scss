@@ -1,0 +1,60 @@
+.section1 {
+  height: 100vh;
+  padding: 0 100px;
+  backdrop-filter: blur(5px);
+  background: url(../../assets/img/bg_header.png) fixed center/cover;
+
+  .corporation-container {
+    @include grid("", center);
+    @include rowColumn(50% 50%, 100vh);
+    text-align: center;
+    padding: 50px;
+
+    h2 {
+      font-family: $font2;
+      text-transform: uppercase;
+    }
+
+    .civilian-container {
+      height: 100%;
+
+      h2 {
+        width: 300px;
+        margin: 0 auto;
+        background: linear-gradient(
+          15deg,
+          $yellow1 0%,
+          $yellow2 25%,
+          $yellow3 50%,
+          $yellow1 75%,
+          $yellow2 100%
+        );
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+      }
+    }
+
+    .military-container {
+      height: 100%;
+
+      h2 {
+        width: 300px;
+        margin: 0 auto;
+        background: linear-gradient(
+          15deg,
+          $grey1 0%,
+          $grey2 25%,
+          $grey3 50%,
+          $grey2 75%,
+          $grey1 100%
+        );
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+      }
+    }
+  }
+}

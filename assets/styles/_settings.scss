@@ -1,0 +1,73 @@
+// FONTS  //
+
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+$font1: "roboto";
+$font2: "poppins";
+
+// COLORS //
+
+$blue1: #0097d7;
+$blue2: #095a7d;
+$blue3: #004992;
+
+$red1: #b60000;
+
+$yellow1: #fbd882;
+$yellow2: #fdf602;
+$yellow3: #c8aa00;
+
+$white1: #fff;
+$white2: rgb(236, 236, 236);
+
+$grey1: #c4c4c4;
+$grey2: #a9a9a9;
+$grey3: #6a6a6a;
+$grey4: #36424e;
+
+$black1: #181818;
+$black2: #000000;
+
+// MIXINS //
+
+@mixin flex($content, $items) {
+  display: flex;
+  justify-content: $content;
+  align-items: $items;
+}
+
+@mixin grid($content, $items) {
+  display: grid;
+  justify-content: $content;
+  align-items: $items;
+}
+
+@mixin rowColumn($column, $row) {
+  grid-template-columns: $column;
+  grid-template-rows: $row;
+}
+
+// GENERAL PARAMETERS //
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  font-family: $font1;
+  font-weight: 600;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: block;
+}

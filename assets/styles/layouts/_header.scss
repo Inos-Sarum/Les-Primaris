@@ -1,0 +1,102 @@
+header {
+  padding: 0 100px;
+  height: 100vh;
+  background: url(../../assets/img/bg_header.png) fixed center/cover;
+  position: relative;
+
+  .navbar {
+    @include grid(center, "");
+    @include rowColumn(10% 80% 10%, 100px);
+    position: fixed;
+    min-width: 500px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    padding-top: 20px;
+    z-index: 10;
+
+    @media screen and (max-width: 920px) {
+      @include rowColumn(20% 30% 40%, 75px);
+    }
+
+    img {
+      height: 100%;
+      margin: 0 auto;
+    }
+
+    .nav-content {
+      @include flex(space-around, center);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      font-weight: 400;
+      padding: 0 50px;
+      margin: 0 auto;
+      width: 65%;
+
+      @media screen and (max-width: 1160px) {
+        font-size: 0.7rem;
+        width: 80%;
+      }
+
+      @media screen and (max-width: 920px) {
+        visibility: hidden;
+      }
+
+      li {
+        position: relative;
+        font-family: $font2;
+        color: $yellow1;
+        padding: 10px 0;
+        transition: 0.1s ease;
+
+        &:hover {
+          color: $white1;
+          text-shadow: 0 1px 15px $yellow2;
+          cursor: pointer;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          width: 0;
+          height: 0;
+          background: none;
+          transition: 0.2s ease;
+        }
+
+        &:hover:after {
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background: $grey2;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    .nav-social-logos {
+      @include flex(space-around, center);
+      font-size: 1.2rem;
+      color: $grey2;
+      padding: 5px;
+
+      li {
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        transition: 0.2s ease;
+        color: $yellow1;
+
+        &:hover {
+          color: $yellow2;
+          text-shadow: 0 0 10px $yellow1;
+          transform: scale(1.4);
+        }
+      }
+    }
+  }
+}
