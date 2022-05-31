@@ -53,15 +53,16 @@ $black2: #000000;
 
 // MIXINS //
 
-@mixin flex($content, $items) {
+@mixin flex($row, $content, $items) {
   display: flex;
+  flex-direction: $row;
   justify-content: $content;
   align-items: $items;
 }
 
 @mixin grid($content, $items) {
   display: grid;
-  justify-content: $content;
+  justify-items: $content;
   align-items: $items;
 }
 
@@ -81,6 +82,7 @@ $black2: #000000;
   font-family: $font1;
   font-weight: 600;
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 body {

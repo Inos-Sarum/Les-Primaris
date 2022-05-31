@@ -1,19 +1,25 @@
 .section1 {
   position: relative;
   height: 100vh;
-  background: $black2;
+  background: url(../../assets/img/bg_section.png) fixed center/cover;
 
   @include grid("", center);
-  @include rowColumn(50% 50%, 100vh);
+  @include rowColumn(50% 50%, 950px);
   text-align: center;
   padding: 0 50px;
 
   .corporation-container-left,
   .corporation-container-right {
     position: relative;
-    width: 95%;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
     border-radius: 3px;
     z-index: 2;
+
+    .container {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
+    }
 
     h2 {
       padding-top: 50px;
@@ -25,22 +31,21 @@
     }
 
     img {
-      padding: 100px 0;
+      margin: 150px 0;
       filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.361));
+      transition: 0.3s ease;
+      cursor: pointer;
     }
   }
   .corporation-container-left {
-    background: url(../../assets/img/bg_civilian1.jpg) fixed center/cover;
+    background: url(../../assets/img/bg_civilian1.jpg) center/cover;
 
     .civilian-container {
-      height: 90%;
+      height: 75%;
       background: $gradYellow;
-      margin: 50px;
+      margin: 100px;
       border-radius: 10px;
       backdrop-filter: blur(2px);
-
-      &:hover {
-      }
 
       h2 {
         background: linear-gradient(
@@ -57,14 +62,21 @@
         -moz-text-fill-color: transparent;
         filter: drop-shadow(0 2px 1px $yellow1);
       }
+
+      img {
+        &:hover {
+          transform: translateY(-5px);
+          filter: drop-shadow(0 1px 10px $yellow1);
+        }
+      }
     }
   }
   .corporation-container-right {
-    background: url(../../assets/img/bg_section1.png) fixed center/cover;
+    background: url(../../assets/img/bg_section1.png) center/cover;
 
     .military-container {
-      height: 90%;
-      margin: 50px;
+      height: 75%;
+      margin: 100px;
       background: $gradGrey;
       border-radius: 10px;
       backdrop-filter: blur(2px);
@@ -82,7 +94,14 @@
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
-        filter: drop-shadow(0 2px 1px $grey2);
+        filter: drop-shadow(0 2px 1px $blue3);
+      }
+
+      img {
+        &:hover {
+          transform: translateY(-5px);
+          filter: drop-shadow(0 1px 10px $blue3);
+        }
       }
     }
   }
