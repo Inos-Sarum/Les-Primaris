@@ -2,11 +2,10 @@
   position: relative;
   height: 100vh;
   background: url(../../assets/img/bg_section.png) fixed center/cover;
-
   @include grid("", center);
-  @include rowColumn(50% 50%, 950px);
+  @include rowColumn(50% 50%, 100%);
   text-align: center;
-  padding: 0 50px;
+  padding: 0 50px 100px;
 
   .corporation-container-left,
   .corporation-container-right {
@@ -41,7 +40,7 @@
     background: url(../../assets/img/bg_civilian1.jpg) center/cover;
 
     .civilian-container {
-      height: 75%;
+      height: 80%;
       background: $gradYellow;
       margin: 100px;
       border-radius: 10px;
@@ -75,7 +74,7 @@
     background: url(../../assets/img/bg_section1.png) center/cover;
 
     .military-container {
-      height: 75%;
+      height: 80%;
       margin: 100px;
       background: $gradGrey;
       border-radius: 10px;
