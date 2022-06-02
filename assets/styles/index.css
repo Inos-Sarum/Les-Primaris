@@ -304,7 +304,6 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section2 {
-  height: 370vh;
   padding-top: 50px;
   background: #000000;
   display: -ms-grid;
@@ -323,7 +322,7 @@ header .navbar .nav-social-logos li:hover {
 
 .section2 h2 {
   margin-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   text-transform: uppercase;
   font-size: 2rem;
   letter-spacing: 5px;
@@ -336,8 +335,7 @@ header .navbar .nav-social-logos li:hover {
 .section2 h3 {
   text-transform: uppercase;
   text-align: left;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
+  font-size: 1rem;
   color: #fff;
   letter-spacing: 2px;
 }
@@ -357,6 +355,7 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section2 .civilian-departments {
+  height: 180vh;
   background: #181818;
   border-top: 10px solid #fbd882;
   border-radius: 10px;
@@ -380,8 +379,8 @@ header .navbar .nav-social-logos li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: 10% 12% 18% 60%;
-      grid-template-columns: 10% 12% 18% 60%;
+  -ms-grid-columns: 10% 15% 18% 57%;
+      grid-template-columns: 10% 15% 18% 57%;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   padding: 20px 0;
@@ -547,129 +546,6 @@ header .navbar .nav-social-logos li:hover {
           filter: drop-shadow(0 3px 5px #85f1ff);
 }
 
-.section2 .industry {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#ff9500));
-  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #ff9500 100%);
-  border-right: 5px solid #fff;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.section2 .industry .polygon-shadow {
-  -webkit-filter: drop-shadow(0);
-          filter: drop-shadow(0);
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.section2 .industry .polygon-shadow .polygon {
-  -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
-          clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
-  background: #ff9500;
-  width: 70%;
-  height: 100px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.section2 .industry:hover .polygon-shadow {
-  -webkit-filter: drop-shadow(0 3px 5px #ff9500);
-          filter: drop-shadow(0 3px 5px #ff9500);
-}
-
-.section2 .industry:hover .polygon-shadow .polygon {
-  background: #ffdeaf;
-  -webkit-transform: translateX(20px);
-          transform: translateX(20px);
-}
-
-.section2 .industry:hover img {
-  -webkit-filter: drop-shadow(0 3px 5px #ffdeaf);
-          filter: drop-shadow(0 3px 5px #ffdeaf);
-}
-
-.section2 .sciences {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#b90000));
-  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #b90000 100%);
-  border-right: 5px solid #fff;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.section2 .sciences .polygon-shadow {
-  -webkit-filter: drop-shadow(0);
-          filter: drop-shadow(0);
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.section2 .sciences .polygon-shadow .polygon {
-  -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
-          clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
-  background: #b90000;
-  width: 70%;
-  height: 100px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.section2 .sciences:hover .polygon-shadow {
-  -webkit-filter: drop-shadow(0 3px 5px #fcfcfc);
-          filter: drop-shadow(0 3px 5px #fcfcfc);
-}
-
-.section2 .sciences:hover .polygon-shadow .polygon {
-  background: #fcfcfc;
-  -webkit-transform: translateX(20px);
-          transform: translateX(20px);
-}
-
-.section2 .sciences:hover img {
-  -webkit-filter: drop-shadow(0 3px 5px #fcfcfc);
-          filter: drop-shadow(0 3px 5px #fcfcfc);
-}
-
-.section2 .senate {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#0a4b70));
-  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #0a4b70 100%);
-  border-right: 5px solid #fff;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.section2 .senate .polygon-shadow {
-  -webkit-filter: drop-shadow(0);
-          filter: drop-shadow(0);
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.section2 .senate .polygon-shadow .polygon {
-  -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
-          clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
-  background: #0a4b70;
-  width: 70%;
-  height: 100px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.section2 .senate:hover .polygon-shadow {
-  -webkit-filter: drop-shadow(0 3px 5px #98d9ff);
-          filter: drop-shadow(0 3px 5px #98d9ff);
-}
-
-.section2 .senate:hover .polygon-shadow .polygon {
-  background: #98d9ff;
-  -webkit-transform: translateX(20px);
-          transform: translateX(20px);
-}
-
-.section2 .senate:hover img {
-  -webkit-filter: drop-shadow(0 3px 5px #98d9ff);
-          filter: drop-shadow(0 3px 5px #98d9ff);
-}
-
 .section2 .trading {
   background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#007f15));
   background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #007f15 100%);
@@ -711,20 +587,143 @@ header .navbar .nav-social-logos li:hover {
           filter: drop-shadow(0 3px 5px #9fffaf);
 }
 
+.section2 .culture {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#ffe400));
+  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #ffe400 100%);
+  border-right: 5px solid #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section2 .culture .polygon-shadow {
+  -webkit-filter: drop-shadow(0);
+          filter: drop-shadow(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .culture .polygon-shadow .polygon {
+  -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+          clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+  background: #ffe400;
+  width: 70%;
+  height: 100px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .culture:hover .polygon-shadow {
+  -webkit-filter: drop-shadow(0 3px 5px #ffe400);
+          filter: drop-shadow(0 3px 5px #ffe400);
+}
+
+.section2 .culture:hover .polygon-shadow .polygon {
+  background: #fff38a;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.section2 .culture:hover img {
+  -webkit-filter: drop-shadow(0 3px 5px #ffe400);
+          filter: drop-shadow(0 3px 5px #ffe400);
+}
+
+.section2 .industry {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#ff9500));
+  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #ff9500 100%);
+  border-right: 5px solid #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section2 .industry .polygon-shadow {
+  -webkit-filter: drop-shadow(0);
+          filter: drop-shadow(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .industry .polygon-shadow .polygon {
+  -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+          clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+  background: #ff9500;
+  width: 70%;
+  height: 100px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .industry:hover .polygon-shadow {
+  -webkit-filter: drop-shadow(0 3px 5px #ff9500);
+          filter: drop-shadow(0 3px 5px #ff9500);
+}
+
+.section2 .industry:hover .polygon-shadow .polygon {
+  background: #ffdeaf;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.section2 .industry:hover img {
+  -webkit-filter: drop-shadow(0 3px 5px #ff9500);
+          filter: drop-shadow(0 3px 5px #ff9500);
+}
+
+.section2 .sciences {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#b90000));
+  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #b90000 100%);
+  border-right: 5px solid #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section2 .sciences .polygon-shadow {
+  -webkit-filter: drop-shadow(0);
+          filter: drop-shadow(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .sciences .polygon-shadow .polygon {
+  -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+          clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+  background: #b90000;
+  width: 70%;
+  height: 100px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .sciences:hover .polygon-shadow {
+  -webkit-filter: drop-shadow(0 3px 5px #ff3434);
+          filter: drop-shadow(0 3px 5px #ff3434);
+}
+
+.section2 .sciences:hover .polygon-shadow .polygon {
+  background: #fcfcfc;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.section2 .sciences:hover img {
+  -webkit-filter: drop-shadow(0 3px 5px #ff3434);
+          filter: drop-shadow(0 3px 5px #ff3434);
+}
+
 .section2 .military-departments {
+  height: 180vh;
   background: #181818;
-  border-top: 10px solid #004992;
+  border-top: 10px solid #fbd882;
   border-radius: 10px;
-  padding: 0 20px;
-  text-align: center;
+  padding: 50px 50px;
   display: -ms-grid;
   display: grid;
-  justify-items: "";
+  justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: 200px;
-      grid-template-columns: 200px;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
   -ms-grid-rows: (14.3%)[7];
       grid-template-rows: repeat(7, 14.3%);
 }
@@ -732,25 +731,133 @@ header .navbar .nav-social-logos li:hover {
 .section2 .military-departments .departments-containers {
   display: -ms-grid;
   display: grid;
+  justify-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 10% 15% 18% 57%;
+      grid-template-columns: 10% 15% 18% 57%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  padding: 20px 0;
+  border-bottom: 1px solid #c4c4c4;
+  width: 95%;
+}
+
+.section2 .military-departments .departments-containers:last-child {
+  border-bottom: none;
+}
+
+.section2 .military-departments .departments-containers .img-container {
+  display: -ms-grid;
+  display: grid;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10.5px;
-}
-
-.section2 .military-departments .departments-containers h3 {
-  padding: 20px 0 30px;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  color: #fff;
+  padding: 5px;
 }
 
 .section2 .military-departments .departments-containers img {
-  padding-bottom: 20px;
-  width: 90%;
+  height: 190px;
   -webkit-filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.297));
           filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.297));
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .military-departments .departments-containers p {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .military-departments .departments-containers:hover h3 {
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.838);
+}
+
+.section2 .military-departments .departments-containers:hover p {
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.838);
+}
+
+.section2 .military-departments .aerospatial {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#7700ff));
+  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #7700ff 100%);
+  border-right: 5px solid #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section2 .military-departments .aerospatial .polygon-shadow {
+  -webkit-filter: drop-shadow(0);
+          filter: drop-shadow(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .military-departments .aerospatial .polygon-shadow .polygon {
+  -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+          clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+  background: #7700ff;
+  width: 70%;
+  height: 100px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .military-departments .aerospatial:hover .polygon-shadow {
+  -webkit-filter: drop-shadow(0 3px 5px #7700ff);
+          filter: drop-shadow(0 3px 5px #7700ff);
+}
+
+.section2 .military-departments .aerospatial:hover .polygon-shadow .polygon {
+  background: #d2abff;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.section2 .military-departments .aerospatial:hover img {
+  -webkit-filter: drop-shadow(0 3px 5px #d2abff);
+          filter: drop-shadow(0 3px 5px #d2abff);
+}
+
+.section2 .military-departments .infantry {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#7700ff));
+  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #7700ff 100%);
+  border-right: 5px solid #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section2 .military-departments .infantry .polygon-shadow {
+  -webkit-filter: drop-shadow(0);
+          filter: drop-shadow(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .military-departments .infantry .polygon-shadow .polygon {
+  -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+          clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+  background: #7700ff;
+  width: 70%;
+  height: 100px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .military-departments .infantry:hover .polygon-shadow {
+  -webkit-filter: drop-shadow(0 3px 5px #7700ff);
+          filter: drop-shadow(0 3px 5px #7700ff);
+}
+
+.section2 .military-departments .infantry:hover .polygon-shadow .polygon {
+  background: #d2abff;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.section2 .military-departments .infantry:hover img {
+  -webkit-filter: drop-shadow(0 3px 5px #d2abff);
+          filter: drop-shadow(0 3px 5px #d2abff);
 }
 /*# sourceMappingURL=index.css.map */

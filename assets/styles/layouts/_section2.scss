@@ -1,5 +1,4 @@
 .section2 {
-  height: 370vh;
   padding-top: 50px;
   background: $black2;
   @include grid(stretch, center);
@@ -9,7 +8,7 @@
 
   h2 {
     margin-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     text-transform: uppercase;
     font-size: 2rem;
     letter-spacing: 5px;
@@ -22,8 +21,7 @@
   h3 {
     text-transform: uppercase;
     text-align: left;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
+    font-size: 1rem;
     color: $white1;
     letter-spacing: 2px;
   }
@@ -43,6 +41,7 @@
   }
 
   .civilian-departments {
+    height: 180vh;
     background: $black1;
     border-top: 10px solid $yellow1;
     border-radius: 10px;
@@ -52,7 +51,7 @@
 
     .departments-containers {
       @include grid(stretch, center);
-      @include rowColumn(10% 12% 18% 60%, 1fr);
+      @include rowColumn(10% 15% 18% 57%, 1fr);
       padding: 20px 0;
       border-bottom: 1px solid $grey1;
       width: 95%;
@@ -196,117 +195,6 @@
     }
   }
 
-  .industry {
-    background: linear-gradient(
-      90deg,
-      rgba(39, 39, 239, 0) 0%,
-      rgb(255, 149, 0) 100%
-    );
-    border-right: 5px solid $white1;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-    .polygon-shadow {
-      filter: drop-shadow(0);
-      transition: 0.3s ease;
-
-      .polygon {
-        clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
-        background: rgb(255, 149, 0);
-        width: 70%;
-        height: 100px;
-        transition: 0.3s ease;
-      }
-    }
-
-    &:hover {
-      .polygon-shadow {
-        filter: drop-shadow(0 3px 5px rgb(255, 149, 0));
-        .polygon {
-          background: rgb(255, 222, 175);
-          transform: translateX(20px);
-        }
-      }
-      img {
-        filter: drop-shadow(0 3px 5px rgb(255, 222, 175));
-      }
-    }
-  }
-
-  .sciences {
-    background: linear-gradient(
-      90deg,
-      rgba(39, 39, 239, 0) 0%,
-      rgb(185, 0, 0) 100%
-    );
-    border-right: 5px solid $white1;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-    .polygon-shadow {
-      filter: drop-shadow(0);
-      transition: 0.3s ease;
-
-      .polygon {
-        clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
-        background: rgb(185, 0, 0);
-        width: 70%;
-        height: 100px;
-        transition: 0.3s ease;
-      }
-    }
-
-    &:hover {
-      .polygon-shadow {
-        filter: drop-shadow(0 3px 5px rgb(252, 252, 252));
-        .polygon {
-          background: rgb(252, 252, 252);
-          transform: translateX(20px);
-        }
-      }
-      img {
-        filter: drop-shadow(0 3px 5px rgb(252, 252, 252));
-      }
-    }
-  }
-
-  .senate {
-    background: linear-gradient(
-      90deg,
-      rgba(39, 39, 239, 0) 0%,
-      rgb(10, 75, 112) 100%
-    );
-    border-right: 5px solid $white1;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-    .polygon-shadow {
-      filter: drop-shadow(0);
-      transition: 0.3s ease;
-
-      .polygon {
-        clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
-        background: rgb(10, 75, 112);
-        width: 70%;
-        height: 100px;
-        transition: 0.3s ease;
-      }
-    }
-
-    &:hover {
-      .polygon-shadow {
-        filter: drop-shadow(0 3px 5px rgb(152, 217, 255));
-        .polygon {
-          background: rgb(152, 217, 255);
-          transform: translateX(20px);
-        }
-      }
-      img {
-        filter: drop-shadow(0 3px 5px rgb(152, 217, 255));
-      }
-    }
-  }
-
   .trading {
     background: linear-gradient(
       90deg,
@@ -344,30 +232,230 @@
     }
   }
 
-  .military-departments {
-    background: $black1;
-    border-top: 10px solid $blue3;
-    border-radius: 10px;
-    padding: 0 20px;
-    text-align: center;
-    @include grid("", center);
-    @include rowColumn(200px, repeat(7, 14.3%));
+  .culture {
+    background: linear-gradient(
+      90deg,
+      rgba(39, 39, 239, 0) 0%,
+      rgb(255, 228, 0) 100%
+    );
+    border-right: 5px solid $white1;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 
-    .departments-containers {
-      @include grid(center, center);
-      padding: 0 10.5px;
+    .polygon-shadow {
+      filter: drop-shadow(0);
+      transition: 0.3s ease;
 
-      h3 {
-        padding: 20px 0 30px;
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        letter-spacing: 1px;
-        color: $white1;
+      .polygon {
+        clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+        background: rgb(255, 228, 0);
+        width: 70%;
+        height: 100px;
+        transition: 0.3s ease;
+      }
+    }
+
+    &:hover {
+      .polygon-shadow {
+        filter: drop-shadow(0 3px 5px rgb(255, 228, 0));
+        .polygon {
+          background: rgb(255, 243, 138);
+          transform: translateX(20px);
+        }
       }
       img {
-        padding-bottom: 20px;
-        width: 90%;
+        filter: drop-shadow(0 3px 5px rgb(255, 228, 0));
+      }
+    }
+  }
+
+  .industry {
+    background: linear-gradient(
+      90deg,
+      rgba(39, 39, 239, 0) 0%,
+      rgb(255, 149, 0) 100%
+    );
+    border-right: 5px solid $white1;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    .polygon-shadow {
+      filter: drop-shadow(0);
+      transition: 0.3s ease;
+
+      .polygon {
+        clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+        background: rgb(255, 149, 0);
+        width: 70%;
+        height: 100px;
+        transition: 0.3s ease;
+      }
+    }
+
+    &:hover {
+      .polygon-shadow {
+        filter: drop-shadow(0 3px 5px rgb(255, 149, 0));
+        .polygon {
+          background: rgb(255, 222, 175);
+          transform: translateX(20px);
+        }
+      }
+      img {
+        filter: drop-shadow(0 3px 5px rgb(255, 149, 0));
+      }
+    }
+  }
+
+  .sciences {
+    background: linear-gradient(
+      90deg,
+      rgba(39, 39, 239, 0) 0%,
+      rgb(185, 0, 0) 100%
+    );
+    border-right: 5px solid $white1;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    .polygon-shadow {
+      filter: drop-shadow(0);
+      transition: 0.3s ease;
+
+      .polygon {
+        clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+        background: rgb(185, 0, 0);
+        width: 70%;
+        height: 100px;
+        transition: 0.3s ease;
+      }
+    }
+
+    &:hover {
+      .polygon-shadow {
+        filter: drop-shadow(0 3px 5px rgb(255, 52, 52));
+        .polygon {
+          background: rgb(252, 252, 252);
+          transform: translateX(20px);
+        }
+      }
+      img {
+        filter: drop-shadow(0 3px 5px rgb(255, 52, 52));
+      }
+    }
+  }
+
+  .military-departments {
+    height: 180vh;
+    background: $black1;
+    border-top: 10px solid $yellow1;
+    border-radius: 10px;
+    padding: 50px 50px;
+    @include grid(center, center);
+    @include rowColumn(100%, repeat(7, 14.3%));
+
+    .departments-containers {
+      @include grid(stretch, center);
+      @include rowColumn(10% 15% 18% 57%, 1fr);
+      padding: 20px 0;
+      border-bottom: 1px solid $grey1;
+      width: 95%;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .img-container {
+        @include grid(center, center);
+        padding: 5px;
+      }
+      img {
+        height: 190px;
         filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.297));
+        transition: 0.3s ease;
+      }
+
+      p {
+        transition: 0.3s ease;
+      }
+
+      &:hover {
+        h3 {
+          text-shadow: 0 2px 2px rgba(0, 0, 0, 0.838);
+        }
+        p {
+          text-shadow: 0 2px 2px rgba(0, 0, 0, 0.838);
+        }
+      }
+    }
+
+    .aerospatial {
+      background: linear-gradient(
+        90deg,
+        rgba(39, 39, 239, 0) 0%,
+        rgb(119, 0, 255) 100%
+      );
+      border-right: 5px solid $white1;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      .polygon-shadow {
+        filter: drop-shadow(0);
+        transition: 0.3s ease;
+        .polygon {
+          clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+          background: rgb(119, 0, 255);
+          width: 70%;
+          height: 100px;
+          transition: 0.3s ease;
+        }
+      }
+
+      &:hover {
+        .polygon-shadow {
+          filter: drop-shadow(0 3px 5px rgb(119, 0, 255));
+          .polygon {
+            background: rgb(210, 171, 255);
+            transform: translateX(20px);
+          }
+        }
+        img {
+          filter: drop-shadow(0 3px 5px rgb(210, 171, 255));
+        }
+      }
+    }
+
+    .infantry {
+      background: linear-gradient(
+        90deg,
+        rgba(39, 39, 239, 0) 0%,
+        rgb(119, 0, 255) 100%
+      );
+      border-right: 5px solid $white1;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      .polygon-shadow {
+        filter: drop-shadow(0);
+        transition: 0.3s ease;
+        .polygon {
+          clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+          background: rgb(119, 0, 255);
+          width: 70%;
+          height: 100px;
+          transition: 0.3s ease;
+        }
+      }
+
+      &:hover {
+        .polygon-shadow {
+          filter: drop-shadow(0 3px 5px rgb(119, 0, 255));
+          .polygon {
+            background: rgb(210, 171, 255);
+            transform: translateX(20px);
+          }
+        }
+        img {
+          filter: drop-shadow(0 3px 5px rgb(210, 171, 255));
+        }
       }
     }
   }
