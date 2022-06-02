@@ -304,8 +304,8 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section2 {
-  height: 200vh;
-  padding-top: 100px;
+  height: 370vh;
+  padding-top: 50px;
   background: #000000;
   display: -ms-grid;
   display: grid;
@@ -325,8 +325,12 @@ header .navbar .nav-social-logos li:hover {
   margin-top: 50px;
   padding-bottom: 20px;
   text-transform: uppercase;
-  font-size: 1.4rem;
-  letter-spacing: 2px;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+.section2 h2:nth-child(2) {
+  margin-top: 50px;
 }
 
 .section2 h3 {
@@ -347,6 +351,7 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section2 .departments {
+  position: relative;
   margin: 0 auto;
   width: 80%;
 }
@@ -355,7 +360,7 @@ header .navbar .nav-social-logos li:hover {
   background: #181818;
   border-top: 10px solid #fbd882;
   border-radius: 10px;
-  padding: 20px 50px;
+  padding: 50px 50px;
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -601,7 +606,7 @@ header .navbar .nav-social-logos li:hover {
 .section2 .sciences .polygon-shadow .polygon {
   -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
           clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
-  background: #fcfcfc;
+  background: #b90000;
   width: 70%;
   height: 100px;
   -webkit-transition: 0.3s ease;
