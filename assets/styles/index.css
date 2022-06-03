@@ -201,7 +201,7 @@ header .navbar .nav-social-logos li:hover {
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
   text-align: center;
-  padding: 0 150px 100px;
+  padding: 0 150px 150px;
 }
 
 .section1 .corporation-container-left,
@@ -303,8 +303,63 @@ header .navbar .nav-social-logos li:hover {
           filter: drop-shadow(0 1px 10px #004992);
 }
 
+.section1 .button-container {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #fbd882;
+  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "";
+          flex-direction: "";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #fbd882;
+  border-radius: 50px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.section1 .button-container .button {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+.section1 .button-container a {
+  height: 80px;
+  width: 80px;
+  color: #fbd882;
+}
+
+.section1 .button-container:hover {
+  background: #fbd882;
+  color: #181818;
+  border: 3px solid #ececec;
+  -webkit-box-shadow: 0 0 10px #fbd882;
+          box-shadow: 0 0 10px #fbd882;
+}
+
+.section1 .button-container:hover a {
+  color: #fff;
+}
+
 .section2 {
+  position: relative;
   padding-top: 50px;
+  padding-bottom: 50px;
   background: #000000;
   display: -ms-grid;
   display: grid;
@@ -388,10 +443,6 @@ header .navbar .nav-social-logos li:hover {
   width: 95%;
 }
 
-.section2 .civilian-departments .departments-containers:last-child {
-  border-bottom: none;
-}
-
 .section2 .civilian-departments .departments-containers .img-container {
   display: -ms-grid;
   display: grid;
@@ -449,8 +500,8 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section2 .academy:hover .polygon-shadow {
-  -webkit-filter: drop-shadow(0 3px 5px #7700ff);
-          filter: drop-shadow(0 3px 5px #7700ff);
+  -webkit-filter: drop-shadow(0 3px 5px #a658ff);
+          filter: drop-shadow(0 3px 5px #a658ff);
 }
 
 .section2 .academy:hover .polygon-shadow .polygon {
@@ -460,8 +511,8 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section2 .academy:hover img {
-  -webkit-filter: drop-shadow(0 3px 5px #d2abff);
-          filter: drop-shadow(0 3px 5px #d2abff);
+  -webkit-filter: drop-shadow(0 3px 5px #a658ff);
+          filter: drop-shadow(0 3px 5px #a658ff);
 }
 
 .section2 .exploration {
@@ -490,19 +541,19 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section2 .exploration:hover .polygon-shadow {
-  -webkit-filter: drop-shadow(0 3px 5px #006eff);
-          filter: drop-shadow(0 3px 5px #006eff);
+  -webkit-filter: drop-shadow(0 3px 5px #2081ff);
+          filter: drop-shadow(0 3px 5px #2081ff);
 }
 
 .section2 .exploration:hover .polygon-shadow .polygon {
-  background: #8ebfff;
+  background: #a5ccff;
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
 }
 
 .section2 .exploration:hover img {
-  -webkit-filter: drop-shadow(0 3px 5px #8ebfff);
-          filter: drop-shadow(0 3px 5px #8ebfff);
+  -webkit-filter: drop-shadow(0 3px 5px #2081ff);
+          filter: drop-shadow(0 3px 5px #2081ff);
 }
 
 .section2 .diplomacy {
@@ -531,19 +582,19 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section2 .diplomacy:hover .polygon-shadow {
-  -webkit-filter: drop-shadow(0 3px 5px #00e1ff);
-          filter: drop-shadow(0 3px 5px #00e1ff);
+  -webkit-filter: drop-shadow(0 3px 5px #39e8ff);
+          filter: drop-shadow(0 3px 5px #39e8ff);
 }
 
 .section2 .diplomacy:hover .polygon-shadow .polygon {
-  background: #85f1ff;
+  background: #98f3ff;
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
 }
 
 .section2 .diplomacy:hover img {
-  -webkit-filter: drop-shadow(0 3px 5px #85f1ff);
-          filter: drop-shadow(0 3px 5px #85f1ff);
+  -webkit-filter: drop-shadow(0 3px 5px #39e8ff);
+          filter: drop-shadow(0 3px 5px #39e8ff);
 }
 
 .section2 .trading {
@@ -572,8 +623,8 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section2 .trading:hover .polygon-shadow {
-  -webkit-filter: drop-shadow(0 3px 5px #007f15);
-          filter: drop-shadow(0 3px 5px #007f15);
+  -webkit-filter: drop-shadow(0 3px 5px #09d42b);
+          filter: drop-shadow(0 3px 5px #09d42b);
 }
 
 .section2 .trading:hover .polygon-shadow .polygon {
@@ -583,8 +634,8 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section2 .trading:hover img {
-  -webkit-filter: drop-shadow(0 3px 5px #9fffaf);
-          filter: drop-shadow(0 3px 5px #9fffaf);
+  -webkit-filter: drop-shadow(0 3px 5px #09d42b);
+          filter: drop-shadow(0 3px 5px #09d42b);
 }
 
 .section2 .culture {
@@ -629,8 +680,8 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section2 .industry {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#ff9500));
-  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #ff9500 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#ee7300));
+  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #ee7300 100%);
   border-right: 5px solid #fff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -646,7 +697,7 @@ header .navbar .nav-social-logos li:hover {
 .section2 .industry .polygon-shadow .polygon {
   -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
           clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
-  background: #ff9500;
+  background: #ee7300;
   width: 70%;
   height: 100px;
   -webkit-transition: 0.3s ease;
@@ -654,8 +705,8 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section2 .industry:hover .polygon-shadow {
-  -webkit-filter: drop-shadow(0 3px 5px #ff9500);
-          filter: drop-shadow(0 3px 5px #ff9500);
+  -webkit-filter: drop-shadow(0 3px 5px #ff7b00);
+          filter: drop-shadow(0 3px 5px #ff7b00);
 }
 
 .section2 .industry:hover .polygon-shadow .polygon {
@@ -665,8 +716,8 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section2 .industry:hover img {
-  -webkit-filter: drop-shadow(0 3px 5px #ff9500);
-          filter: drop-shadow(0 3px 5px #ff9500);
+  -webkit-filter: drop-shadow(0 3px 5px #ff7b00);
+          filter: drop-shadow(0 3px 5px #ff7b00);
 }
 
 .section2 .sciences {
@@ -716,6 +767,7 @@ header .navbar .nav-social-logos li:hover {
   border-top: 10px solid #fbd882;
   border-radius: 10px;
   padding: 50px 50px;
+  margin-bottom: 150px;
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -742,10 +794,6 @@ header .navbar .nav-social-logos li:hover {
   padding: 20px 0;
   border-bottom: 1px solid #c4c4c4;
   width: 95%;
-}
-
-.section2 .military-departments .departments-containers:last-child {
-  border-bottom: none;
 }
 
 .section2 .military-departments .departments-containers .img-container {
@@ -780,8 +828,8 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section2 .military-departments .aerospatial {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#7700ff));
-  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #7700ff 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#000679));
+  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #000679 100%);
   border-right: 5px solid #fff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -797,7 +845,7 @@ header .navbar .nav-social-logos li:hover {
 .section2 .military-departments .aerospatial .polygon-shadow .polygon {
   -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
           clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
-  background: #7700ff;
+  background: #000679;
   width: 70%;
   height: 100px;
   -webkit-transition: 0.3s ease;
@@ -805,24 +853,65 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section2 .military-departments .aerospatial:hover .polygon-shadow {
-  -webkit-filter: drop-shadow(0 3px 5px #7700ff);
-          filter: drop-shadow(0 3px 5px #7700ff);
+  -webkit-filter: drop-shadow(0 3px 5px #6267f5);
+          filter: drop-shadow(0 3px 5px #6267f5);
 }
 
 .section2 .military-departments .aerospatial:hover .polygon-shadow .polygon {
-  background: #d2abff;
+  background: #bbbdfc;
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
 }
 
 .section2 .military-departments .aerospatial:hover img {
-  -webkit-filter: drop-shadow(0 3px 5px #d2abff);
-          filter: drop-shadow(0 3px 5px #d2abff);
+  -webkit-filter: drop-shadow(0 3px 5px #6267f5);
+          filter: drop-shadow(0 3px 5px #6267f5);
+}
+
+.section2 .military-departments .instruction {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#48316d));
+  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #48316d 100%);
+  border-right: 5px solid #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section2 .military-departments .instruction .polygon-shadow {
+  -webkit-filter: drop-shadow(0);
+          filter: drop-shadow(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .military-departments .instruction .polygon-shadow .polygon {
+  -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+          clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+  background: #48316d;
+  width: 70%;
+  height: 100px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .military-departments .instruction:hover .polygon-shadow {
+  -webkit-filter: drop-shadow(0 3px 5px #a871ff);
+          filter: drop-shadow(0 3px 5px #a871ff);
+}
+
+.section2 .military-departments .instruction:hover .polygon-shadow .polygon {
+  background: #c5a1ff;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.section2 .military-departments .instruction:hover img {
+  -webkit-filter: drop-shadow(0 3px 5px #a871ff);
+          filter: drop-shadow(0 3px 5px #a871ff);
 }
 
 .section2 .military-departments .infantry {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#7700ff));
-  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #7700ff 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#026400));
+  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #026400 100%);
   border-right: 5px solid #fff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -838,7 +927,7 @@ header .navbar .nav-social-logos li:hover {
 .section2 .military-departments .infantry .polygon-shadow .polygon {
   -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
           clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
-  background: #7700ff;
+  background: #026400;
   width: 70%;
   height: 100px;
   -webkit-transition: 0.3s ease;
@@ -846,18 +935,317 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section2 .military-departments .infantry:hover .polygon-shadow {
-  -webkit-filter: drop-shadow(0 3px 5px #7700ff);
-          filter: drop-shadow(0 3px 5px #7700ff);
+  -webkit-filter: drop-shadow(0 3px 5px #0c990a);
+          filter: drop-shadow(0 3px 5px #0c990a);
 }
 
 .section2 .military-departments .infantry:hover .polygon-shadow .polygon {
-  background: #d2abff;
+  background: #aaffa9;
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
 }
 
 .section2 .military-departments .infantry:hover img {
-  -webkit-filter: drop-shadow(0 3px 5px #d2abff);
-          filter: drop-shadow(0 3px 5px #d2abff);
+  -webkit-filter: drop-shadow(0 3px 5px #0c990a);
+          filter: drop-shadow(0 3px 5px #0c990a);
+}
+
+.section2 .military-departments .logistic {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#c57d00));
+  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #c57d00 100%);
+  border-right: 5px solid #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section2 .military-departments .logistic .polygon-shadow {
+  -webkit-filter: drop-shadow(0);
+          filter: drop-shadow(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .military-departments .logistic .polygon-shadow .polygon {
+  -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+          clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+  background: #c57d00;
+  width: 70%;
+  height: 100px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .military-departments .logistic:hover .polygon-shadow {
+  -webkit-filter: drop-shadow(0 3px 5px #f79c00);
+          filter: drop-shadow(0 3px 5px #f79c00);
+}
+
+.section2 .military-departments .logistic:hover .polygon-shadow .polygon {
+  background: #ffd285;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.section2 .military-departments .logistic:hover img {
+  -webkit-filter: drop-shadow(0 3px 5px #f79c00);
+          filter: drop-shadow(0 3px 5px #f79c00);
+}
+
+.section2 .military-departments .medicine {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#990000));
+  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #990000 100%);
+  border-right: 5px solid #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section2 .military-departments .medicine .polygon-shadow {
+  -webkit-filter: drop-shadow(0);
+          filter: drop-shadow(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .military-departments .medicine .polygon-shadow .polygon {
+  -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+          clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+  background: #990000;
+  width: 70%;
+  height: 100px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .military-departments .medicine:hover .polygon-shadow {
+  -webkit-filter: drop-shadow(0 3px 5px #f32d2d);
+          filter: drop-shadow(0 3px 5px #f32d2d);
+}
+
+.section2 .military-departments .medicine:hover .polygon-shadow .polygon {
+  background: #ff8989;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.section2 .military-departments .medicine:hover img {
+  -webkit-filter: drop-shadow(0 3px 5px #f32d2d);
+          filter: drop-shadow(0 3px 5px #f32d2d);
+}
+
+.section2 .military-departments .science_mili {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#0097de));
+  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #0097de 100%);
+  border-right: 5px solid #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section2 .military-departments .science_mili .polygon-shadow {
+  -webkit-filter: drop-shadow(0);
+          filter: drop-shadow(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .military-departments .science_mili .polygon-shadow .polygon {
+  -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+          clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+  background: #0097de;
+  width: 70%;
+  height: 100px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .military-departments .science_mili:hover .polygon-shadow {
+  -webkit-filter: drop-shadow(0 3px 5px #19b6ff);
+          filter: drop-shadow(0 3px 5px #19b6ff);
+}
+
+.section2 .military-departments .science_mili:hover .polygon-shadow .polygon {
+  background: #90dcff;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.section2 .military-departments .science_mili:hover img {
+  -webkit-filter: drop-shadow(0 3px 5px #19b6ff);
+          filter: drop-shadow(0 3px 5px #19b6ff);
+}
+
+.section2 .military-departments .black-ops {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 239, 0)), to(#1d0000));
+  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, #1d0000 100%);
+  border-right: 5px solid #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section2 .military-departments .black-ops .polygon-shadow {
+  -webkit-filter: drop-shadow(0);
+          filter: drop-shadow(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .military-departments .black-ops .polygon-shadow .polygon {
+  -webkit-clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+          clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+  background: #1d0000;
+  width: 70%;
+  height: 100px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.section2 .military-departments .black-ops:hover .polygon-shadow {
+  -webkit-filter: drop-shadow(0 3px 5px #900000);
+          filter: drop-shadow(0 3px 5px #900000);
+}
+
+.section2 .military-departments .black-ops:hover .polygon-shadow .polygon {
+  background: #404040;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.section2 .military-departments .black-ops:hover img {
+  -webkit-filter: drop-shadow(0 3px 5px #900000);
+          filter: drop-shadow(0 3px 5px #900000);
+}
+
+.section2 .button-container {
+  position: absolute;
+  bottom: 1.3%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #fbd882;
+  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "";
+          flex-direction: "";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #fbd882;
+  border-radius: 50px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.section2 .button-container .button {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+.section2 .button-container a {
+  height: 80px;
+  width: 80px;
+  color: #fbd882;
+}
+
+.section2 .button-container:hover {
+  background: #fbd882;
+  color: #181818;
+  border: 3px solid #ececec;
+  -webkit-box-shadow: 0 0 10px #fbd882;
+          box-shadow: 0 0 10px #fbd882;
+}
+
+.section2 .button-container:hover a {
+  color: #fff;
+}
+
+footer {
+  position: relative;
+  padding: 100px 0 50px 0;
+  background: url(../../assets/img/bg_footer.jpg) fixed center/cover;
+  text-align: center;
+  color: #fff;
+  height: 1000px;
+}
+
+footer h2 {
+  padding-bottom: 10px;
+  width: 305px;
+  margin: 0 auto;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #a9a9a9;
+}
+
+footer .form-container {
+  height: 75%;
+  width: 80%;
+  margin: 50px auto 0;
+  background: rgba(128, 128, 128, 0.337);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+footer .button-container {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #fff;
+  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "";
+          flex-direction: "";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #a9a9a9;
+  border-radius: 50px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+footer .button-container .button {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+footer .button-container a {
+  height: 80px;
+  width: 80px;
+  color: #fbd882;
+}
+
+footer .button-container:hover {
+  background: #fff;
+  color: #6a6a6a;
+  border: 3px solid #a9a9a9;
+  -webkit-box-shadow: 0 0 10px #ececec;
+          box-shadow: 0 0 10px #ececec;
+}
+
+footer .button-container:hover a {
+  color: #fff;
 }
 /*# sourceMappingURL=index.css.map */

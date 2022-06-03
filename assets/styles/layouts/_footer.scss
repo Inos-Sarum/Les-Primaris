@@ -1,0 +1,64 @@
+footer {
+  position: relative;
+  padding: 100px 0 50px 0;
+  background: url(../../assets/img/bg_footer.jpg) fixed center/cover;
+  text-align: center;
+  color: $white1;
+  height: 1000px;
+
+  h2 {
+    padding-bottom: 10px;
+    width: 305px;
+    margin: 0 auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid $grey2;
+  }
+
+  .form-container {
+    height: 75%;
+    width: 80%;
+    margin: 50px auto 0;
+    background: rgba(128, 128, 128, 0.337);
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+  }
+
+  .button-container {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    height: 80px;
+    width: 80px;
+    transform: translateX(-50%);
+    color: $white1;
+    font-size: 1.8rem;
+    @include flex("", center, center);
+    border: 3px solid $grey2;
+    border-radius: 50px;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    .button {
+      transform: translateY(5%);
+    }
+
+    a {
+      height: 80px;
+      width: 80px;
+      color: $yellow1;
+    }
+
+    &:hover {
+      background: $white1;
+      color: $grey3;
+      border: 3px solid $grey2;
+      box-shadow: 0 0 10px $white2;
+
+      a {
+        color: $white1;
+      }
+    }
+  }
+}

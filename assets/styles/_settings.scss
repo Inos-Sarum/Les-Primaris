@@ -71,6 +71,39 @@ $black2: #000000;
   grid-template-rows: $row;
 }
 
+// Mixin qui gère la forme des bandeaux des divers départements, avec à l'intérieur les couleurs d'arrière plan et les ombres pour les :hovers //
+@mixin departments($color1, $color2, $color3) {
+  background: linear-gradient(90deg, rgba(39, 39, 239, 0) 0%, $color1 100%);
+  border-right: 5px solid $white1;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  .polygon-shadow {
+    filter: drop-shadow(0);
+    transition: 0.3s ease;
+    .polygon {
+      clip-path: polygon(50% 0, 90% 50%, 50% 100%, 0 100%, 40% 50%, 0 0);
+      background: $color1;
+      width: 70%;
+      height: 100px;
+      transition: 0.3s ease;
+    }
+  }
+
+  &:hover {
+    .polygon-shadow {
+      filter: drop-shadow(0 3px 5px $color3);
+      .polygon {
+        background: $color2;
+        transform: translateX(20px);
+      }
+    }
+    img {
+      filter: drop-shadow(0 3px 5px $color3);
+    }
+  }
+}
+
 // GENERAL PARAMETERS //
 
 * {
