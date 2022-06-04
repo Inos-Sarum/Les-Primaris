@@ -1,12 +1,21 @@
 .section2 {
   position: relative;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 200px;
   background: $black2;
   @include grid(stretch, center);
-  @include rowColumn(1fr, 1fr 1fr);
+  @include rowColumn(100%, 50% 50%);
   text-align: left;
   color: $white1;
+
+  @media screen and (max-width: 550px) {
+    @include grid(center, center);
+    @include rowColumn(530px, 1fr 1fr);
+
+    .polygon-shadow {
+      display: none;
+    }
+  }
 
   h2 {
     margin-top: 50px;
@@ -14,6 +23,10 @@
     text-transform: uppercase;
     font-size: 2rem;
     letter-spacing: 5px;
+
+    @media screen and (max-width: 550px) {
+      text-align: center;
+    }
 
     &:nth-child(2) {
       margin-top: 50px;
@@ -26,6 +39,11 @@
     font-size: 1rem;
     color: $white1;
     letter-spacing: 2px;
+
+    @media screen and (max-width: 550px) {
+      text-align: center;
+      font-size: 2rem;
+    }
   }
 
   p {
@@ -38,8 +56,8 @@
 
   .departments {
     position: relative;
+    width: 90%;
     margin: 0 auto;
-    width: 80%;
   }
 
   .civilian-departments {
@@ -51,6 +69,13 @@
     @include grid(center, center);
     @include rowColumn(100%, repeat(7, 14.3%));
 
+    @media screen and (max-width: 550px) {
+      height: 100%;
+      width: 90%;
+      margin: 0 auto;
+      padding: 50px 0;
+    }
+
     .departments-containers {
       @include grid(stretch, center);
       @include rowColumn(10% 15% 18% 57%, 1fr);
@@ -58,18 +83,36 @@
       border-bottom: 1px solid $grey1;
       width: 95%;
 
+      @media screen and (max-width: 550px) {
+        @include grid(center, center);
+        @include rowColumn(1fr, 15% 1fr 1fr);
+        margin: 0 auto;
+        height: 700px;
+      }
+
       .img-container {
         @include grid(center, center);
         padding: 5px;
       }
+
       img {
         height: 190px;
         filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.297));
         transition: 0.3s ease;
+
+        @media screen and (max-width: 550px) {
+          margin: 0 auto;
+          margin: 20px 0;
+        }
       }
 
       p {
         transition: 0.3s ease;
+
+        @media screen and (max-width: 550px) {
+          width: 90%;
+          padding: 20px 0;
+        }
       }
 
       &:hover {
@@ -114,12 +157,19 @@
   .military-departments {
     height: 180vh;
     background: $black1;
-    border-top: 10px solid $yellow1;
+    border-top: 10px solid $blue3;
     border-radius: 10px;
     padding: 50px 50px;
     margin-bottom: 150px;
     @include grid(center, center);
     @include rowColumn(100%, repeat(7, 14.3%));
+
+    @media screen and (max-width: 550px) {
+      height: 100%;
+      width: 90%;
+      margin: 0 auto;
+      padding: 50px 0;
+    }
 
     .departments-containers {
       @include grid(stretch, center);
@@ -127,6 +177,14 @@
       padding: 20px 0;
       border-bottom: 1px solid $grey1;
       width: 95%;
+
+      @media screen and (max-width: 550px) {
+        @include grid(center, center);
+        @include rowColumn(1fr, 15% 1fr 1fr);
+        margin: 0 auto;
+        padding: 20px 0;
+        height: 700px;
+      }
 
       .img-container {
         @include grid(center, center);
@@ -136,10 +194,20 @@
         height: 190px;
         filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.297));
         transition: 0.3s ease;
+
+        @media screen and (max-width: 550px) {
+          margin: 0 auto;
+          margin: 20px 0;
+        }
       }
 
       p {
         transition: 0.3s ease;
+
+        @media screen and (max-width: 550px) {
+          width: 90%;
+          padding: 20px 0;
+        }
       }
 
       &:hover {
@@ -183,7 +251,7 @@
 
   .button-container {
     position: absolute;
-    bottom: 1.3%;
+    bottom: 0.5%;
     left: 50%;
     height: 80px;
     width: 80px;

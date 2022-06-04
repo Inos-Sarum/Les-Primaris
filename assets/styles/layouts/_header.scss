@@ -4,6 +4,22 @@ header {
   background: url(../../assets/img/bg_section.png) fixed center/cover;
   position: relative;
 
+  @media screen and (max-width: 550px) {
+    background: none;
+    padding: 10px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      height: 100vw;
+      width: 100vh;
+      top: 160px;
+      left: -160px;
+      background: url(../../assets/img/bg_section.png) fixed center/cover;
+      transform: rotate(90deg);
+    }
+  }
+
   .navbar {
     @include grid(center, "");
     @include rowColumn(10% 80% 10%, 100px);
@@ -20,6 +36,14 @@ header {
       @include rowColumn(20% 30% 40%, 75px);
     }
 
+    @media screen and (max-width: 550px) {
+      @include rowColumn(21% 30% 49%, 90px);
+      @include grid(center, center);
+      min-width: 200px;
+      width: 80%;
+      margin: 0 auto;
+    }
+
     img {
       height: 100%;
       margin: 0 auto;
@@ -34,6 +58,7 @@ header {
       padding: 0 50px;
       margin: 0 auto;
       width: 65%;
+      max-width: 1400px;
 
       @media screen and (max-width: 1160px) {
         font-size: 0.7rem;
@@ -94,6 +119,12 @@ header {
       font-size: 1.2rem;
       color: $grey2;
       padding: 5px;
+
+      @media screen and (max-width: 550px) {
+        width: 90%;
+        @include flex("", space-between, center);
+        font-size: 1.5rem;
+      }
 
       li {
         width: 20px;

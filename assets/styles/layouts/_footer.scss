@@ -1,13 +1,16 @@
 footer {
   position: relative;
-  padding: 100px 0 50px 0;
   background: url(../../assets/img/bg_footer.jpg) fixed center/cover;
   text-align: center;
   color: $white1;
-  height: 1000px;
+  height: 100vh;
+
+  @media screen and (max-width: 550px) {
+    padding-bottom: 100px;
+  }
 
   h2 {
-    padding-bottom: 10px;
+    padding: 50px 0 10px;
     width: 305px;
     margin: 0 auto;
     font-size: 2rem;
@@ -17,12 +20,188 @@ footer {
   }
 
   .form-container {
-    height: 75%;
-    width: 80%;
-    margin: 50px auto 0;
+    height: 70%;
+    width: 60%;
+    max-width: 1920px;
+    margin: 50px auto 70px;
+    padding-bottom: 50px;
     background: rgba(128, 128, 128, 0.337);
     border-radius: 10px;
     backdrop-filter: blur(3px);
+    @include grid("", center);
+    @include rowColumn(33% 34% 33%, 33% 57% 10%);
+    grid-template-areas:
+      "pse ema old"
+      "mes mes mes"
+      "btn btn btn";
+
+    @media screen and (max-width: 550px) {
+      width: 85%;
+      @include grid(center, center);
+      @include rowColumn(1fr, 1fr 1fr 1fr 1fr 1fr);
+      grid-template-areas:
+        "pse"
+        "ema"
+        "old"
+        "mes"
+        "btn";
+    }
+
+    div {
+      height: 100%;
+
+      @media screen and (max-width: 550px) {
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+
+        &:last-child {
+          @media screen and (max-width: 550px) {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    label {
+      padding: 50px 0 30px;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 550px) {
+        padding: 20px 0 10px;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+      }
+    }
+
+    input {
+      border: 3px solid $white1;
+      border-radius: 10px;
+      width: 75%;
+      height: 20%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+
+      @media screen and (max-width: 550px) {
+        height: 50px;
+        width: 100%;
+      }
+    }
+
+    input[type="text"],
+    textarea {
+      border: 3px solid $white1;
+      border-radius: 10px;
+      transition: 0.3s ease;
+
+      @media screen and (max-width: 550px) {
+        margin-bottom: 20px;
+      }
+
+      &:focus {
+        background: $black2;
+        color: $white2;
+        border: 3px solid $white1;
+        box-shadow: 0 0 10px $white2;
+      }
+    }
+  }
+
+  .pseudo {
+    grid-area: pse;
+    @include flex(column, "", "");
+  }
+
+  .email {
+    grid-area: ema;
+    @include flex(column, "", "");
+  }
+
+  .age {
+    grid-area: old;
+    @include flex(column, "", "");
+  }
+
+  .message {
+    grid-area: mes;
+    @include flex(column, "", "");
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+    label {
+      padding: 40px 0 30px;
+      font-size: 1.5rem;
+      letter-spacing: 3px;
+
+      @media screen and (max-width: 550px) {
+        font-size: 1.2rem;
+        padding: 40px 0 10px;
+      }
+    }
+
+    textarea {
+      padding: 10px;
+      margin: 0 auto;
+      width: 80%;
+      height: 65%;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+
+      @media screen and (max-width: 550px) {
+        width: 95%;
+        margin: 0 auto;
+        height: 150px;
+      }
+    }
+  }
+
+  .btn {
+    grid-area: btn;
+    height: 100%;
+    width: 25%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 550px) {
+      width: 10%;
+    }
+
+    @include flex("", center, center);
+
+    input {
+      font-family: $font2;
+      height: 70px;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: 0.1s ease;
+
+      @media screen and (max-width: 550px) {
+        height: 90%;
+        font-size: 1.1rem;
+      }
+
+      &:hover {
+        background: $white1;
+        color: $black2;
+        border: 3px solid $grey2;
+        box-shadow: 0 0 10px $white2;
+        transform: translateX(5px);
+      }
+
+      &:focus {
+        background: $black2;
+        color: $white1;
+        border: 3px solid $white1;
+        box-shadow: 0 0 10px $white2;
+      }
+    }
   }
 
   .button-container {
@@ -42,6 +221,7 @@ footer {
 
     .button {
       transform: translateY(5%);
+      font-size: 1.5rem;
     }
 
     a {
@@ -52,9 +232,9 @@ footer {
 
     &:hover {
       background: $white1;
-      color: $grey3;
-      border: 3px solid $grey2;
-      box-shadow: 0 0 10px $white2;
+      color: $black1;
+      border: 3px solid $black1;
+      box-shadow: 0 0 15px 2px $white2;
 
       a {
         color: $white1;
