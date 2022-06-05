@@ -5,19 +5,7 @@ header {
   position: relative;
 
   @media screen and (max-width: 550px) {
-    background: none;
     padding: 10px;
-
-    &:after {
-      content: "";
-      position: absolute;
-      height: 100vw;
-      width: 100vh;
-      top: 160px;
-      left: -160px;
-      background: url(../../assets/img/bg_section.png) fixed center/cover;
-      transform: rotate(90deg);
-    }
   }
 
   .navbar {

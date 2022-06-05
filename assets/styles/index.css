@@ -37,19 +37,7 @@ header {
 
 @media screen and (max-width: 550px) {
   header {
-    background: none;
     padding: 10px;
-  }
-  header:after {
-    content: "";
-    position: absolute;
-    height: 100vw;
-    width: 100vh;
-    top: 160px;
-    left: -160px;
-    background: url(../../assets/img/bg_section.png) fixed center/cover;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
   }
 }
 
@@ -277,19 +265,33 @@ header .navbar .nav-social-logos li:hover {
 .section1 .corporation-container-right {
   position: relative;
   margin: 0 auto;
-  width: 70%;
-  max-width: 750px;
+  width: 90%;
+  max-width: 1500px;
   min-width: 370px;
-  height: 10;
+  height: 60%;
   z-index: 2;
   outline: 5px solid rgba(110, 110, 110, 0.41);
   border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "";
+          flex-direction: "";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 550px) {
   .section1 .corporation-container-left,
   .section1 .corporation-container-right {
-    height: 550px;
+    height: 650px;
+    width: 75%;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     -ms-grid-rows: 50% 50%;
@@ -302,6 +304,19 @@ header .navbar .nav-social-logos li:hover {
 .section1 .corporation-container-right .container {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
+  height: 70%;
+  width: 90%;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+@media screen and (max-width: 550px) {
+  .section1 .corporation-container-left .container,
+  .section1 .corporation-container-right .container {
+    margin: 20px;
+    height: 90%;
+  }
 }
 
 .section1 .corporation-container-left h2,
@@ -310,7 +325,7 @@ header .navbar .nav-social-logos li:hover {
   font-family: "poppins";
   text-transform: uppercase;
   width: 310px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   letter-spacing: 1px;
 }
 
@@ -319,13 +334,12 @@ header .navbar .nav-social-logos li:hover {
   .section1 .corporation-container-right h2 {
     width: 300px;
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
 .section1 .corporation-container-left img,
 .section1 .corporation-container-right img {
-  margin: 150px 0;
   -webkit-filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.361));
           filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.361));
   -webkit-transition: 0.3s ease;
@@ -343,23 +357,17 @@ header .navbar .nav-social-logos li:hover {
 }
 
 .section1 .corporation-container-left {
-  background: url(../../assets/img/bg_civilian1.jpg) left/cover;
-}
-
-.section1 .corporation-container-left .civilian-container {
-  height: 80%;
-  background: linear-gradient(45deg, #fafafa3d 0%, #d0ad000a 30%, #d0ad000a 70%, #fafafa3d 100%);
-  margin: 100px;
-  border-radius: 10px;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  background: url(../../assets/img/bg_civilian1.jpg) center/cover;
 }
 
 @media screen and (max-width: 550px) {
-  .section1 .corporation-container-left .civilian-container {
-    margin: 20px;
-    height: 90%;
+  .section1 .corporation-container-left {
+    background: url(../../assets/img/bg_civilian1.jpg) center/cover fixed;
   }
+}
+
+.section1 .corporation-container-left .civilian-container {
+  background: linear-gradient(45deg, #fafafa3d 0%, #d0ad000a 30%, #d0ad000a 70%, #fafafa3d 100%);
 }
 
 .section1 .corporation-container-left .civilian-container h2 {
@@ -383,20 +391,14 @@ header .navbar .nav-social-logos li:hover {
   background: url(../../assets/img/bg_mili-section1.png) center/cover;
 }
 
-.section1 .corporation-container-right .military-container {
-  height: 80%;
-  margin: 100px;
-  background: linear-gradient(45deg, #fafafa3d 0%, #8787870a 30%, #8787870a 70%, #fafafa3d 100%);
-  border-radius: 10px;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+@media screen and (max-width: 550px) {
+  .section1 .corporation-container-right {
+    background: url(../../assets/img/bg_mili-section1.png) center/cover fixed;
+  }
 }
 
-@media screen and (max-width: 550px) {
-  .section1 .corporation-container-right .military-container {
-    margin: 20px;
-    height: 90%;
-  }
+.section1 .corporation-container-right .military-container {
+  background: linear-gradient(45deg, #fafafa3d 0%, #8787870a 30%, #8787870a 70%, #fafafa3d 100%);
 }
 
 .section1 .corporation-container-right .military-container h2 {
@@ -405,15 +407,15 @@ header .navbar .nav-social-logos li:hover {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  -webkit-filter: drop-shadow(0 2px 1px #004992);
-          filter: drop-shadow(0 2px 1px #004992);
+  -webkit-filter: drop-shadow(0 2px 1px #fff);
+          filter: drop-shadow(0 2px 1px #fff);
 }
 
 .section1 .corporation-container-right .military-container img:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
-  -webkit-filter: drop-shadow(0 1px 10px #004992);
-          filter: drop-shadow(0 1px 10px #004992);
+  -webkit-filter: drop-shadow(0 1px 10px #fff);
+          filter: drop-shadow(0 1px 10px #fff);
 }
 
 .section1 .button-container {
@@ -666,6 +668,14 @@ header .navbar .nav-social-logos li:hover {
   border-bottom-right-radius: 10px;
 }
 
+@media screen and (max-width: 550px) {
+  .section2 .academy {
+    border-left: 5px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
 .section2 .academy .polygon-shadow {
   -webkit-filter: drop-shadow(0);
           filter: drop-shadow(0);
@@ -705,6 +715,14 @@ header .navbar .nav-social-logos li:hover {
   border-right: 5px solid #fff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .section2 .exploration {
+    border-left: 5px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
 }
 
 .section2 .exploration .polygon-shadow {
@@ -748,6 +766,14 @@ header .navbar .nav-social-logos li:hover {
   border-bottom-right-radius: 10px;
 }
 
+@media screen and (max-width: 550px) {
+  .section2 .diplomacy {
+    border-left: 5px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
 .section2 .diplomacy .polygon-shadow {
   -webkit-filter: drop-shadow(0);
           filter: drop-shadow(0);
@@ -787,6 +813,14 @@ header .navbar .nav-social-logos li:hover {
   border-right: 5px solid #fff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .section2 .trading {
+    border-left: 5px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
 }
 
 .section2 .trading .polygon-shadow {
@@ -830,6 +864,14 @@ header .navbar .nav-social-logos li:hover {
   border-bottom-right-radius: 10px;
 }
 
+@media screen and (max-width: 550px) {
+  .section2 .culture {
+    border-left: 5px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
 .section2 .culture .polygon-shadow {
   -webkit-filter: drop-shadow(0);
           filter: drop-shadow(0);
@@ -871,6 +913,14 @@ header .navbar .nav-social-logos li:hover {
   border-bottom-right-radius: 10px;
 }
 
+@media screen and (max-width: 550px) {
+  .section2 .industry {
+    border-left: 5px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
 .section2 .industry .polygon-shadow {
   -webkit-filter: drop-shadow(0);
           filter: drop-shadow(0);
@@ -910,6 +960,14 @@ header .navbar .nav-social-logos li:hover {
   border-right: 5px solid #fff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .section2 .sciences {
+    border-left: 5px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
 }
 
 .section2 .sciences .polygon-shadow {
@@ -1060,6 +1118,14 @@ header .navbar .nav-social-logos li:hover {
   border-bottom-right-radius: 10px;
 }
 
+@media screen and (max-width: 550px) {
+  .section2 .military-departments .aerospatial {
+    border-left: 5px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
 .section2 .military-departments .aerospatial .polygon-shadow {
   -webkit-filter: drop-shadow(0);
           filter: drop-shadow(0);
@@ -1099,6 +1165,14 @@ header .navbar .nav-social-logos li:hover {
   border-right: 5px solid #fff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .section2 .military-departments .instruction {
+    border-left: 5px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
 }
 
 .section2 .military-departments .instruction .polygon-shadow {
@@ -1142,6 +1216,14 @@ header .navbar .nav-social-logos li:hover {
   border-bottom-right-radius: 10px;
 }
 
+@media screen and (max-width: 550px) {
+  .section2 .military-departments .infantry {
+    border-left: 5px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
 .section2 .military-departments .infantry .polygon-shadow {
   -webkit-filter: drop-shadow(0);
           filter: drop-shadow(0);
@@ -1181,6 +1263,14 @@ header .navbar .nav-social-logos li:hover {
   border-right: 5px solid #fff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .section2 .military-departments .logistic {
+    border-left: 5px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
 }
 
 .section2 .military-departments .logistic .polygon-shadow {
@@ -1224,6 +1314,14 @@ header .navbar .nav-social-logos li:hover {
   border-bottom-right-radius: 10px;
 }
 
+@media screen and (max-width: 550px) {
+  .section2 .military-departments .medicine {
+    border-left: 5px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
 .section2 .military-departments .medicine .polygon-shadow {
   -webkit-filter: drop-shadow(0);
           filter: drop-shadow(0);
@@ -1263,6 +1361,14 @@ header .navbar .nav-social-logos li:hover {
   border-right: 5px solid #fff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .section2 .military-departments .science_mili {
+    border-left: 5px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
 }
 
 .section2 .military-departments .science_mili .polygon-shadow {
@@ -1306,6 +1412,14 @@ header .navbar .nav-social-logos li:hover {
   border-bottom-right-radius: 10px;
 }
 
+@media screen and (max-width: 550px) {
+  .section2 .military-departments .black-ops {
+    border-left: 5px solid #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
 .section2 .military-departments .black-ops .polygon-shadow {
   -webkit-filter: drop-shadow(0);
           filter: drop-shadow(0);
@@ -1341,7 +1455,7 @@ header .navbar .nav-social-logos li:hover {
 
 .section2 .button-container {
   position: absolute;
-  bottom: 0.5%;
+  bottom: 50px;
   left: 50%;
   height: 80px;
   width: 80px;

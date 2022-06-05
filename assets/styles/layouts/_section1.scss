@@ -18,22 +18,33 @@
   .corporation-container-right {
     position: relative;
     margin: 0 auto;
-    width: 70%;
-    max-width: 750px;
+    width: 90%;
+    max-width: 1500px;
     min-width: 370px;
-    height: 10;
+    height: 60%;
     z-index: 2;
     outline: 5px solid rgba(110, 110, 110, 0.41);
     border-radius: 7px;
+    @include flex("", center, center);
 
     @media screen and (max-width: 550px) {
-      height: 550px;
+      height: 650px;
+      width: 75%;
       @include rowColumn(100%, 50% 50%);
       padding: 20px;
     }
 
     .container {
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
+      height: 70%;
+      width: 90%;
+      border-radius: 10px;
+      backdrop-filter: blur(3px);
+
+      @media screen and (max-width: 550px) {
+        margin: 20px;
+        height: 90%;
+      }
     }
 
     h2 {
@@ -41,18 +52,17 @@
       font-family: $font2;
       text-transform: uppercase;
       width: 310px;
-      margin: 0 auto;
+      margin: 0 auto 50px;
       letter-spacing: 1px;
 
       @media screen and (max-width: 550px) {
         width: 300px;
         margin: 0 auto;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
     }
 
     img {
-      margin: 150px 0;
       filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.361));
       transition: 0.3s ease;
       cursor: pointer;
@@ -66,19 +76,14 @@
   }
 
   .corporation-container-left {
-    background: url(../../assets/img/bg_civilian1.jpg) left/cover;
+    background: url(../../assets/img/bg_civilian1.jpg) center/cover;
+
+    @media screen and (max-width: 550px) {
+      background: url(../../assets/img/bg_civilian1.jpg) center/cover fixed;
+    }
 
     .civilian-container {
-      height: 80%;
       background: $gradYellow;
-      margin: 100px;
-      border-radius: 10px;
-      backdrop-filter: blur(3px);
-
-      @media screen and (max-width: 550px) {
-        margin: 20px;
-        height: 90%;
-      }
 
       h2 {
         background: linear-gradient(
@@ -107,17 +112,12 @@
   .corporation-container-right {
     background: url(../../assets/img/bg_mili-section1.png) center/cover;
 
-    .military-container {
-      height: 80%;
-      margin: 100px;
-      background: $gradGrey;
-      border-radius: 10px;
-      backdrop-filter: blur(3px);
+    @media screen and (max-width: 550px) {
+      background: url(../../assets/img/bg_mili-section1.png) center/cover fixed;
+    }
 
-      @media screen and (max-width: 550px) {
-        margin: 20px;
-        height: 90%;
-      }
+    .military-container {
+      background: $gradGrey;
 
       h2 {
         background: linear-gradient(
@@ -132,13 +132,13 @@
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
-        filter: drop-shadow(0 2px 1px $blue3);
+        filter: drop-shadow(0 2px 1px $white1);
       }
 
       img {
         &:hover {
           transform: translateY(-5px);
-          filter: drop-shadow(0 1px 10px $blue3);
+          filter: drop-shadow(0 1px 10px $white1);
         }
       }
     }
