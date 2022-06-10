@@ -27,6 +27,7 @@ footer {
     padding-bottom: 50px;
     background: rgba(128, 128, 128, 0.337);
     border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.348);
     backdrop-filter: blur(3px);
     @include grid("", center);
     @include rowColumn(33% 34% 33%, 33% 57% 10%);

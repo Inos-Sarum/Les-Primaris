@@ -1538,6 +1538,8 @@ footer .form-container {
   padding-bottom: 50px;
   background: rgba(128, 128, 128, 0.337);
   border-radius: 10px;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.348);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.348);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   display: -ms-grid;
